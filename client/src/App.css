@@ -32,5 +32,6 @@ nav>h1:hover {
 
 .form-label {
   display: inline-block;
-  width: 200px;
+  width: 250px;
+  margin: 10px;
 }
