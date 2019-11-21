@@ -1,0 +1,26 @@
+{
+    "data": [
+        {
+            "company": "BBVA",
+            "contact": "Kristie Adair",
+            "method": "LinkedIn",
+            "date": "10/17/2019",
+            "id": 0
+        },
+        {
+            "company": "Keysys",
+            "contact": "Kelly Knudsen",
+            "method": "In Person",
+            "date": "2019-11-08",
+            "id": 1
+        },
+        {
+            "company": "Protective Life",
+            "contact": "Louise Ritter",
+            "method": "Phone Call",
+            "date": "2019-11-13",
+            "id": 2
+        }
+    ],
+    "nextid": 3
+}

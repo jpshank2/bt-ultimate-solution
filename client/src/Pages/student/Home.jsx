@@ -22,7 +22,7 @@ export default class Home extends Component {
     }
 
     handleSubmit = (e) => {
-        e.preventDefault();
+       // e.preventDefault();
         fetch("http://localhost:3001/employers", {
             method: "POST",
             headers: {
@@ -30,7 +30,11 @@ export default class Home extends Component {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                
+                company: this.state.company,
+                contact: this.state.contact,
+                method: this.state.method,
+                date: this.state.date,
+                id: ""
             })
         })
     }
@@ -45,6 +49,10 @@ export default class Home extends Component {
 
     method = (e) => {
         this.setState({method: e.target.value})
+    }
+
+    date = (e) => {
+        this.setState({date: e.target.value})
     }
 
     render() {
@@ -70,19 +78,19 @@ export default class Home extends Component {
                         </label><br></br>
                         <label htmlFor="how" className="form-label" onClick={this.method}>How did they contact you?<span className="required">*</span>
                             <label className="form-label">
-                                <input type="radio" name="how" value="email" required />Email
+                                <input type="radio" name="how" value="Email" required />Email
                             </label><br></br>
                             <label className="form-label">
-                                <input type="radio" name="how" value="phone" />Phone Call
+                                <input type="radio" name="how" value="Phone Call" />Phone Call
                             </label><br></br>
                             <label className="form-label">
-                                <input type="radio" name="how" value="person" />In Person
+                                <input type="radio" name="how" value="In Person" />In Person
                             </label><br></br>
                             <label className="form-label">
-                            <input type="radio" name="how" value="linkedin" />LinkedIn
+                            <input type="radio" name="how" value="LinkedIn" />LinkedIn
                             </label><br></br>
                         </label><br></br>
-                        <label htmlFor="when" className="form-label">When did they contact you?<span className="required">*</span>
+                        <label htmlFor="when" className="form-label" onChange={this.date}>When did they contact you?<span className="required">*</span>
                             <input type="date" name="when" required />
                         </label><br></br>
                         <input type="submit" value="Submit" onClick={this.handleSubmit} />
