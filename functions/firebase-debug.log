@@ -1,0 +1,17 @@
+[debug] [2019-11-21T22:36:08.390Z] ----------------------------------------------------------------------
+[debug] [2019-11-21T22:36:08.392Z] Command:       /usr/local/bin/node /Users/student/.npm-global/bin/firebase deploy
+[debug] [2019-11-21T22:36:08.393Z] CLI Version:   7.8.1
+[debug] [2019-11-21T22:36:08.393Z] Platform:      darwin
+[debug] [2019-11-21T22:36:08.393Z] Node Version:  v10.16.3
+[debug] [2019-11-21T22:36:08.394Z] Time:          Thu Nov 21 2019 16:36:08 GMT-0600 (Central Standard Time)
+[debug] [2019-11-21T22:36:08.394Z] ----------------------------------------------------------------------
+[debug] [2019-11-21T22:36:08.394Z] 
+[debug] [2019-11-21T22:36:08.448Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-21T22:36:08.449Z] > authorizing via signed-in user
+[debug] [2019-11-21T22:36:08.449Z] [iam] checking project titanium-5c142 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2019-11-21T22:36:08.451Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/titanium-5c142:testIamPermissions  
+
+[debug] [2019-11-21T22:36:08.722Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-21T22:36:08.725Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/titanium-5c142  
+ 
+[debug] [2019-11-21T22:36:08.905Z] <<< HTTP RESPONSE 200
