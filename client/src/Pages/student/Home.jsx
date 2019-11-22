@@ -31,7 +31,7 @@ export default class Home extends Component {
             },
             body: JSON.stringify({
                 company: this.state.company,
-                contact: this.state.contact,
+                contact: [this.state.contact],
                 method: this.state.method,
                 date: this.state.date,
                 id: ""
@@ -58,7 +58,7 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <h2>Talked to any new Employers?</h2>
+                <h2>Made any new Connections?</h2>
                 <form>
                     <section onClick={this.toggle}>
                         <label>
