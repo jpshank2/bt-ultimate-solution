@@ -30,12 +30,13 @@ export default class EmployerCard extends Component {
             <React.Fragment>
                 {this.state.employers.map(employer => {
                     return (
-                        <div className="card" key={employer.id}>
+
+                        <div className="card div-shadow padded oneThird" key={employer.id}>
                             <h2>{employer.company}</h2>
                             <p>{employer.contact}</p>
                             <p>{employer.method}</p>
                             <p>{employer.date}</p>
-                            <button id={employer.id} onClick={this.updateInfo}>Update</button>
+                            <button class="btn-box" id={employer.id} onClick={this.updateInfo}>Update</button>
                             <UpdateEmployer class={employer.id} />
                         </div>
                     )

@@ -49,6 +49,7 @@ export default class FirstContact extends Component {
     render() {
         return (
             <section style={{ display: this.props.display, margin: 20 }}>
+                <div className="col-5 div-shadow padded radio-buttons">
                 <label className="form-label" htmlFor="company">What company?<span className="required">*</span>
                     <input type="text" name="company" required onChange={this.company} />
                 </label><br></br>
@@ -73,6 +74,7 @@ export default class FirstContact extends Component {
                     <input type="date" name="when" required />
                 </label><br></br>
                 <input type="submit" value="Submit" onClick={this.handleSubmit} />
+                </div>
             </section>
         )
     }

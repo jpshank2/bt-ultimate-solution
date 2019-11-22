@@ -31,6 +31,7 @@ export default class FollowUp extends Component {
     render() {
         return (
             <div style={{ display: this.props.display }}>
+                <div className="col-5 div-shadow padded radio-buttons">
                 <label className="form-label" htmlFor="company">What company?<span className="required">*</span>
                     <input type="text" name="company" required onChange={this.company} />
                 </label><br></br>
@@ -55,6 +56,7 @@ export default class FollowUp extends Component {
                     <input type="date" name="when" required />
                 </label><br></br>
                 <input type="submit" value="Submit" onClick={this.handleSubmit} />
+                </div>
             </div>
         )
     }

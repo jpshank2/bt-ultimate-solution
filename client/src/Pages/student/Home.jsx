@@ -36,29 +36,37 @@ export default class Home extends Component {
             <div>
                 <h2>Made any new Connections?</h2>
                 <form>
-                    <section onClick={this.toggleContact}>
-                        <label>
-                            <input type="radio" name="new-employer" value="yes" />Yes
+                    <div className="row">
+                        <div className="col-5 radio-buttons div-shadow padded">
+                            <section onClick={this.toggleContact}>
+                                <label>
+                                    <input type="radio" name="new-employer" value="yes" />Yes
                         </label>
-                        <br></br>
-                        <label>
-                            <input type="radio" name="new-employer" value="no" />No
+                                <br></br>
+                                <label>
+                                    <input type="radio" name="new-employer" value="no" />No
                         </label>
-                    </section>
-                    <section style={{ display: this.state.display }} onClick={this.firstContact}>
-                        <h3>Was this your first contact?</h3>
-                        <label>
-                            <input type="radio" name="new-employer" value="yes" />Yes
+                            </section>
+                        </div>
+                    </div>
+                    <div style={{ display: this.state.display }} className="row" onClick={this.firstContact}>
+                        <div className="col-5 div-shadow padded radio-buttons">
+                            <section>
+                                <h3>Was this your first contact?</h3>
+                                <label>
+                                    <input type="radio" name="new-employer" value="yes" />Yes
                         </label>
-                        <br></br>
-                        <label>
-                            <input type="radio" name="new-employer" value="no" />No
+                                <br></br>
+                                <label>
+                                    <input type="radio" name="new-employer" value="no" />No
                         </label>
-                    </section>
-                    <section>
-                        <FirstContact display={this.state.firstContact} />
-                        <FollowUp display={this.state.followUp} />
-                    </section>
+                            </section>
+                        </div></div>
+                        <section>
+                            <FirstContact display={this.state.firstContact} />
+                            <FollowUp display={this.state.followUp} />
+                        </section>
+
                 </form>
             </div>
         )
