@@ -1,6 +1,6 @@
-const fs        = require("fs");
-const jsontoxml = require('jsontoxml')
-let employer = JSON.parse(fs.readFileSync("./employer.json"));
+const fs         = require("fs");
+const jsontoxml  = require('jsontoxml');
+let employer     = JSON.parse(fs.readFileSync("./employer.json"));
 
 let writePost = () => {
     fs.writeFileSync("./employer.json", JSON.stringify(employer))
