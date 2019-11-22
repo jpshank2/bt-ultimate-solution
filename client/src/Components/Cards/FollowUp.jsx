@@ -1,17 +1,36 @@
 import React, { Component } from 'react'
 
-export default class UpdateEmployer extends Component {
+export default class FollowUp extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            holder: "yo"
+            company: "",
+            contact: "",
+            method: "",
+            date: "",
         }
     }
+
+    company = (e) => {
+        this.setState({ company: e.target.value })
+    }
+
+    contact = (e) => {
+        this.setState({ contact: e.target.value })
+    }
+
+    method = (e) => {
+        this.setState({ method: e.target.value })
+    }
+
+    date = (e) => {
+        this.setState({ date: e.target.value })
+    }
+
     render() {
         return (
-            <div className={this.props.class} style={{display: "none"}}>
-                <form>
+            <div style={{ display: this.props.display }}>
                 <label className="form-label" htmlFor="company">What company?<span className="required">*</span>
                     <input type="text" name="company" required onChange={this.company} />
                 </label><br></br>
@@ -36,7 +55,6 @@ export default class UpdateEmployer extends Component {
                     <input type="date" name="when" required />
                 </label><br></br>
                 <input type="submit" value="Submit" onClick={this.handleSubmit} />
-                </form>
             </div>
         )
     }
