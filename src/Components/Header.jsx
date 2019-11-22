@@ -14,7 +14,7 @@ class Header extends Component {
     render() {
         return (
             <div className="container-fluid header">
-                <div className="row squish">
+                <div className="row">
                     <div className="col-3 logoDiv" onclick="location.href='/'">
                         <a style={logoLink} href="/">&nbsp;</a>
                     </div>

@@ -20,18 +20,18 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <h2>Talked to any new Employers?</h2>
+                <h2>Made any new Connections?</h2>
                 <form>
                     <div className="row">
                         <div className="col-5 radio-buttons div-shadow padded">
                             <section onClick={this.toggle}>
                                 <label>
                                     <input type="radio" name="new-employer" value="yes" />&nbsp;&nbsp;Yes
-                        </label>
+                                </label>
                                 <br></br>
                                 <label>
                                     <input type="radio" name="new-employer" value="no" />&nbsp;&nbsp;No
-                        </label>
+                                </label>
                             </section>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ export default class Home extends Component {
                                 <input type="text" name="company" required /><br></br>
                                 <label className="form-label" htmlFor="contact">Who did you talk to?<span className="required">*</span> </label><br />
                                 <input type="text" name="contact" required /><br></br><br />
-                                <input type="submit" value="Submit" class="btn-box"/>
+                                <input type="submit" value="Submit" class="btn-box" />
                             </section>
                         </div>
                     </div>
