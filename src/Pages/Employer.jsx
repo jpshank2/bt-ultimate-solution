@@ -1,12 +1,17 @@
-import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+  import React, { Component } from 'react'
+import EmployerCard from '../../Components/Cards/EmployerCard'
 
-export default class Employer extends Component {
+export default class Employers extends Component {
     render() {
         return (
-            <div>
-                You are an employer!
-            </div>
+            <React.Fragment>
+                <h1>
+                    These are your connections
+                </h1>
+                <div className="test">
+                    <EmployerCard />
+                </div>
+            </React.Fragment>
         )
     }
 }

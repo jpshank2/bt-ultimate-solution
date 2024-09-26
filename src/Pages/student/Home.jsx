@@ -20,24 +20,32 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <h2>Talked to any new Employers?</h2>
+                <h2>Made any new Connections?</h2>
                 <form>
-                    <section onClick={this.toggle}>
-                        <label>
-                            <input type="radio" name="new-employer" value="yes" />Yes
-                        </label>
-                        <br></br>
-                        <label>
-                            <input type="radio" name="new-employer" value="no" />No
-                        </label>
-                    </section>
-                    <section style={{ display: this.state.display, margin: 20 }}>
-                        <label className="form-label" htmlFor="company">What company?<span className="required">*</span> </label>
-                        <input type="text" name="company" required /><br></br>
-                        <label className="form-label" htmlFor="contact">Who did you talk to?<span className="required">*</span> </label>
-                        <input type="text" name="contact" required /><br></br>
-                        <input type="submit" value="Submit" />
-                    </section>
+                    <div className="row">
+                        <div className="col-5 radio-buttons div-shadow padded">
+                            <section onClick={this.toggle}>
+                                <label>
+                                    <input type="radio" name="new-employer" value="yes" />&nbsp;&nbsp;Yes
+                                </label>
+                                <br></br>
+                                <label>
+                                    <input type="radio" name="new-employer" value="no" />&nbsp;&nbsp;No
+                                </label>
+                            </section>
+                        </div>
+                    </div>
+                    <div style={{ display: this.state.display }} className="row">
+                        <div className="col-5 div-shadow padded radio-buttons">
+                            <section>
+                                <label className="form-label" htmlFor="company">What company?<span className="required">*</span> </label><br />
+                                <input type="text" name="company" required /><br></br>
+                                <label className="form-label" htmlFor="contact">Who did you talk to?<span className="required">*</span> </label><br />
+                                <input type="text" name="contact" required /><br></br><br />
+                                <input type="submit" value="Submit" class="btn-box" />
+                            </section>
+                        </div>
+                    </div>
                 </form>
             </div>
         )

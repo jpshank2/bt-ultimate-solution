@@ -1,0 +1,49 @@
+.logoDiv {
+    background-image: url('../images/ib-logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.content-main {
+    margin: 80px;
+    padding: 0 !important;
+}
+
+.header {
+    padding: 30px 0;
+    box-shadow: 0 3px 3px #999;
+}
+.div-shadow {
+    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #bbb;
+    background-color: #f3f3f3;
+}
+
+.oneThird {
+    width: 30%;
+    margin: 0% 1.5%
+}
+
+.padded {
+    padding: 30px;
+}
+
+.padded-sm {
+    padding: 15px;
+}
+
+.radio-buttons {
+    margin: 30px;
+}
+
+.row {
+    margin: 0
+}
+
+.btn-box {
+    background-color: #36B7E7;
+    color: #f3f3f3;
+    border: none;
+    text-transform: uppercase;
+}

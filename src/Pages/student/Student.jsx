@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import Home from './Home';
 // import { Link } from 'react-router-dom';
 
-export default class Student extends Component {
+class Student extends Component {
+    constructor() {
+        super()
+    }
+
     render() {
         return (
             <div>
@@ -11,3 +15,5 @@ export default class Student extends Component {
         )
     }
 }
+
+export default Student
